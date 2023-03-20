@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Piyush_jt__</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <iframe class="bg" src="https://arkadia.xyz"></iframe>
+    <iframe class="bg1" src="bg.html"></iframe>
+
+    <div class="imgs">
+        <div class="block">
+            <img id="slideshow" class="img" src="https://i.ibb.co/rGsWdCX/image1.jpg">
+        </div>
+    </div>
+    <div class="credit">
+        <i class="fa fa-instagram text"></i>
+        <div class="text">Piyush_jt__</div>
+    </div>
+
+    <script>
+        const images = ['https://i.ibb.co/k96wQCX/image2.jpg', 'https://i.ibb.co/Sy49GDR/image3.jpg', 'https://i.ibb.co/2cpm0pN/image4.jpg'];
+
+        const slideshow = document.getElementById('slideshow');
+
+        let index = 0;
+
+        setInterval(() => {
+            slideshow.src = images[index];
+
+            index = (index + 1) % images.length;
+        }, 2500);
+    </script>
+</body>
+
+</html>
